@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로지공부</title>
+    
+    <!-- 여기부터는 CSS 내용~ -->
+    <style>
+        .active{
+            color: red;
+        }
+
+        .hover{
+            color: blue;
+        }
+
+        .container{
+            display: flex;
+            height: 200px;
+            margin: 20px;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 20%;
+        }
+
+        .container .tag{
+            color: aqua;
+        }
+    </style>
+
+</head>
+
+<!-- 여기부터는 html 내용~ -->
+<body>
+    <div id="hello" class="active">Hello World!</div>
+
+    html : 책의 내용
+    css : 디자인
+    javascript : 동적활동을 제공하는 그런 언어
+
+    <div class = "container">
+        <div class="tag">div 태그</div>
+        <div>div 태그 2</div>
+    </div>
+    
+    
+    <!-- 주석은 ctrl+/ -->
+
+    <span>span 태그</span><span>span 태그 2</span>
+
+
+    <!-- 여기부턴 자바스크립트 내용~ -->
+    <script>
+        var greeting = document.getElementById
+        ("hello")
+        console.log(greeting)
+
+        greeting.addEventListener("mouseover",()=>{
+            greeting.classList.add("hover")
+        })
+        greeting.addEventListener("mouseout", ()=>{
+            greeting.classList.remove("hover")
+        })
+    </script>
+
+
+
+</body>
+</html>
